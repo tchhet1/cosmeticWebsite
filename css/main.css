@@ -1,0 +1,375 @@
+
+body {
+    /*background: rgba(255,255,0,0.3);
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0.5)) !important;*/
+    background-color: #ffffff;
+        }
+        
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+background: linear-gradient(#000000, rgba(0, 0, 0, 0.7));    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.fa.navIcon {
+	padding: 0px 0px !important;
+}
+
+
+
+.cart {
+  position: relative !important;
+  display: inline-block !important;
+} 
+
+.notify {
+  position: absolute !important;
+  top: -1px;
+  right: 10px;
+  display: inline;
+  padding: 0px 5px;
+  border-radius: 50%;
+  background-color: #FC0D1B;
+  color: #000;
+  font-size: 13px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.price {
+	font-weight: bold;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+        
+        
+        .navbar {
+            background-color: #000000;
+            background: linear-gradient(rgba(0, 0, 0, 0.7),#000000);
+            box-shadow: 0px 0px 10px 0px;
+            padding: 0px 0px !important;
+        }
+        
+        .navbar a 
+        {
+            color: #FFFFFF;
+            vertical-align: middle;
+
+        }
+        
+        .navbar a:hover {
+            color: #FE8B92;
+            text-decoration: none;
+        }
+        .nav-item {
+            padding-right: 10px;
+        }
+        
+    .dropdown-item {
+        color: #000000 !important;
+    }
+     
+
+    .btn.btn-outline-success:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+    
+}
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+        
+        .main {
+            width: 100%;
+            height: 400px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 5%;
+            
+            
+        }
+        
+        .row {
+            margin-bottom: 20px;
+        }
+        .figure-caption {
+            color: #000000;
+            width: 200px;
+        }
+        .gallery 
+        {
+            border
+        }
+        
+        .section {
+            position: relative;
+            max-width:800px;
+            height: 400px;
+            margin: 0 auto;   
+        } 
+        
+        
+        
+       
+        
+         .centerText {
+            position:absolute;
+            bottom: 0;
+            background-color:rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+
+        }
+        
+        .centerText h5 {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+    .carousel {
+        margin: auto;
+    }
+    
+    .carouselImage {
+        height: 400px !important;
+    }
+    
+    .carousel-control-prev-icon {
+        color: #000000 !important;
+    }
+    
+    .carousel-control-next-icon {
+        color: #000000;
+    }
+    .skin {
+        border: 1px solid #000000;
+    }
+        
+ .footer {
+           
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),#000000);
+    color: black;
+    }
+        
+/*overlay style */
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.gallery2 {
+            margin-top: 40px;
+        }
+   
+.images {
+            width: 100%;
+        }
+.gif {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    }
+ .fa {
+       color: #FE8B92;
+     padding: 5px 5px;
+        }
+        .fa:hover {
+            color: white;
+        }
+    
+    .slants {
+        position: relative;
+        z-index: 1;
+        background:#FEB2B7;
+        margin: 7% 0;
+        padding: 3% 0;
+        
+    }
+    
+    .slants:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        height: 45%;
+        transform: skewY(2.0deg);
+        z-index: -1;
+        background:#FEB2B7;
+    }
+    .step {
+        border-radius: 50%;
+    }
+    
+    .elfSlants {
+        position: relative;
+        z-index: 1;
+        background:#FEB2B7;
+        margin: 7% 0;
+        padding: 1% 0;
+        
+    }
+	
+	.elfSlants:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        height: 45%;
+        transform: skewY(-2.0deg);
+        z-index: -1;
+        background:#FEB2B7;
+    }
+    
+    .slantImage {
+	    border-radius: 50%;
+	    border: 1px solid #000000;
+    }
+    
+    
+    
+    
+    /* Cart Page */
+    
+    .cartHeader p {
+	    margin-top: 10px;
+	    font-size: 18px;
+    }
+    
+    
+    p.continue-btn {
+	    background-color: #CF1717;
+	    padding: 5px 10px;
+	    margin-top: 7px;
+	    border-radius: 20px;
+	    color: #fff;
+    }
+    
+    
+    
+.remove {
+	    position: relative;
+    top: -24px;
+    right: -4px;
+    color: grey;
+}

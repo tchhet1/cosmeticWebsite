@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <title>Simply Cosmetics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale= 1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body style="height: 2000px;">
+    
+  <!-- The Modal content code -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+     <div class="modal-body">  
+  <form class="modal-content animate" action="/action_page.php">
+    
+    <div class="container">
+        <br>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+<br><br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+   <br><br>     
+      <button type="submit">Login</button>
+        <br><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+<br>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+    </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="#">Sign Up</a>    
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+    </div>
+</div>
+</div> <!-- End of first Modal code -->
+    
+<div class="logo" style="height: 100px;">
+    <center>
+    <a href="index.html"><img src="logo.png" alt="get gorgeous" width="380px" style="margin-top: -100px;" ></a>
+    </center>
+</div>
+<nav class="navbar navbar-expand-sm sticky-top"> 
+    <div class="container-fluid">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="sidelinks" href="#"><i class="fa fa-user iconnav" aria-hidden="true"></i>&nbsp;My Account</a>
+            <a class="sidelinks" href="#"> <i class="fa fa-heart-o iconnav" aria-hidden="true"></i>&nbsp;My Wish List</a>
+            <a class="sidelinks" href="#"><i class="fa fa-shopping-cart iconnav" aria-hidden="true"></i>&nbsp;My Cart</a>
+            <a href=""><button style="margin: 5px 10px 0px 0px;" class="btn btn-outline-danger btn-lg" type="submit">Take a Poll</button></a>
+        </div>
+        <div id="main">
+            <span style="font-size:20px; color: white; cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+<!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brand</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                 <li class="nav-item">
+                    <a href=""><button style="margin: 5px 10px 0px 0px;" class="btn btn-outline-danger btn-sm" type="submit">Take a Poll</button></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link tool" href="#" data-toggle="tooltip" data-placement="bottom" title="My Cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link tool" href="#" data-toggle="tooltip" data-placement="bottom" title="Login to Access Favorites"><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+ 
+ <!-- main body content -->   
+<div class="main">
+    <!--
+    <div class="section">
+        <img class="rounded mainImage" src="main.jpg" alt="main" height="400px" width="800px">
+        <div class="centerText">
+            <h5><b>We sell <span style="color: #FE8B92;">US Brand Cosmetics</span> Online!You can reserve the products online and get it picked up or delivered at your door.</b></h5>
+        </div>
+    </div>
+-->
+
+    
+   
+<div class="container-fluid">
+    <h4 class="text-center">Must Have Skincare</h4>
+    <div class="row" style="margin-top:30px;">
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="cleanser.jpg" alt="" width="400px" height="400px">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="primer.jpg" alt="" width="400px" height="400px">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="faceBalm.jpg" alt="" width="400px" height="400px">
+        </div>
+    </div>   
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="moisturizer.jpg" alt="" width="400px" height="400px">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="nightCream.jpg" alt="" width="400px" height="400px">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block skin" src="drop.jpg" alt="" width="400px" height="400px">
+        </div>
+    </div>
+</div>
+   
+    
+     <div class="container-fluid" style="margin-top:50px;">
+         <h4 class="text-center" style="margin-bottom:20px;"> Best Selling Products</h4>
+            <div class="row gallery1">
+                <div class="col-sm-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                        <img class="img-responsive rounded mx-auto d-block collapsible images" src="MadforMatte_EyeshadowPalettes.jpg" alt="eyeshadow palette" width="200px" height="200px">
+                    <div class="content-details fadeIn-bottom">
+                        <p class="content-text">Rose Gold Eyeshadow Palette<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>    
+                    </div>
+               </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <div class="content">
+                    <div class="content-overlay"></div>                
+                    <img class="img-responsive rounded images" src="liquidEyeliner.jpg" alt="eyeshadow palette" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                <div class="content-details fadeIn-bottom">
+                        <p class="content-text">Satin EyeLiner Pencil<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <div class="content">
+                    <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="pencileEyeliner.jpg" alt="eyeshadow palette" width="200px" height="200px">
+                  <figcaption class="figure-caption"></figcaption>
+                 <div class="content-details fadeIn-bottom">
+                        <p class="content-text">Waterproof Liquid EyeLiner <br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                </div>
+            </div>
+        </div>
+            
+             <div class="col-sm-3">
+                 <div class="content">
+                    <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="tinted.jpg" alt="eyeshadow palette" width="200px" height="200px">
+                  <figcaption class="figure-caption"></figcaption>
+                  <div class="content-details fadeIn-bottom">
+                        <p class="content-text">Waterproof Liquid EyeLiner <br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            </div>
+            </div>
+
+         
+         <div class="row gallery2">
+            <div class="col-sm-3">
+                <div class="content">
+                <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="moisturizer.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                    <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+             
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="duoblush.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                   <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>
+             
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="blushBrush.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                    <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>
+                 
+                 
+                 
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="velvet_matte.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                 <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>     
+         </div>
+<hr style="color: #f1f1f1;">
+    <div class="container">
+         <div class="row justify-content-md-center">
+            <div class="col-sm-9">
+                <img class="rounded gif" src="lipstick.gif" width="100%" alt="lipstick gif">
+             </div>
+         </div>
+        </div>
+         
+    <div class="container">
+       <div class="row">
+           <div class="col-md-3">
+           
+           </div>
+           <div class="col-md-3">
+           
+           </div>
+           <div class="col-md-3">
+           
+           </div>
+        </div>  
+    </div>
+    </div>
+    
+</div>  
+<footer class="footer">
+    <div class="container-fluid">
+    <p class="float-left"> &copy; Copyright 2018</p>
+        <div class="social float-right">
+            <a href="www.facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+            <a href="www.instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+ <script type="text/javascript" src="main.js"></script>     
+</body>
+</html>
