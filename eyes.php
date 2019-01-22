@@ -26,15 +26,24 @@
                         <img class="img-responsive rounded mx-auto d-block collapsible images" src="image/MadforMatte_EyeshadowPalettes.jpg" alt="eyeshadow palette" width="200px" height="200px">
                         
                     <div class="content-details fadeIn-bottom">
-                        <p class="content-text">Rose Gold Eyeshadow Palette</p> 
-	                        <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> 
-	                        <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i>
-	                        
+                        	<p class="content-text">Rose Gold Eyeshadow Palette</p>
+                        	<i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> 
+	                        <i class="fa fa-shopping-cart fa-2x add-items" id="shopping-cart" aria-hidden="true"></i>
+	                        <p class="item-price">$10.00</p> 
+							<button class="btn btn-modal">Quick View</button>
+							
                     </div>
-                   
                </div>
-                <p id="test">Test</p>
+                            <div class="modal-window">
+								<div class="modal-container">
+									<span class="close" id="close-two">&times;</span>
+									<p>test</p>
+								</div>
+							</div>
+   <!--<p id="test">Test</p>-->
+
             </div>
+
             
             <div class="col-sm-3" data-id="02" data-name="Cleanser" data-price="10.00">
                 <div class="content">
@@ -42,11 +51,32 @@
                     <img class="img-responsive rounded images" src="image/liquidEyeliner.jpg" alt="eyeshadow palette" width="200px" height="200px">
                 <figcaption class="figure-caption"></figcaption>
                 <div class="content-details fadeIn-bottom">
-                        <p class="content-text">Satin EyeLiner Pencil<br> 
-	                        <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i></p>
+                        <p class="content-text">Satin EyeLiner Pencil</p>
+	                    <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i>
+                        <p class="item-price">$10.00</p> 
+						<button class="btn btn-modal">Quick View</button>
+							
                     </div>
-                </div>
+               </div>
+                <div class="modal-window">
+					<div class="modal-container">
+						<span class="close" id="close-two">&times;</span>
+						<div class="row h-100">
+							<div class="col-sm-6 my-auto">
+								<img class="img-responsive rounded images" src="image/liquidEyeliner.jpg" alt="eyeshadow palette" width="200px" height="200px">
+							</div>
+							<div class="col-sm-6 my-auto">
+								<h2>Satin EyeLiner Pencil</h2>			             
+		                        <p class="item-price"><b>$10.00</b></p>
+		                        <label for="quantity">Qty</label> <input type="number" class="quantity" value="1" min="1"> 
+		                        <br /><br />
+		                        <button class="btn btn-outline-danger add-items" type="submit">Add to Cart</button>
+							</div>
+						</div>
+						
+					</div>
+				</div>                
             </div>
             
             <div class="col-sm-3" data-id="03" data-name="Cleanser" data-price="10.00">
@@ -120,6 +150,56 @@
                 </div>
             </div>     
          </div>
+         
+         
+         <div class="row gallery2">
+            <div class="col-sm-3">
+                <div class="content">
+                <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="image/moisturizer.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                    <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+             
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="image/duoblush.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                   <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>
+             
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="image/blushBrush.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                    <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i> <i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>
+                 
+                 
+                 
+             <div class="col-sm-3">
+                 <div class="content">
+                 <div class="content-overlay"></div>
+                <img class="img-responsive rounded mx-auto d-block images" src="image/velvet_matte.jpg" alt="Moisturizer" width="200px" height="200px">
+                <figcaption class="figure-caption"></figcaption>
+                 <div class="content-details fadeIn-top">
+                    <p class="content-text">Daily Hydration Moisturizer<br> <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i><i class="fa fa-shopping-cart fa-2x add-items" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+            </div>     
+         </div>
+
 
     
 </div>
@@ -133,6 +213,6 @@
     </div>
 </footer>
 
- <script type="text/javascript" src="image/JavaScript/main.js"></script>     
+ <script type="text/javascript" src="JavaScript/main.js"></script>     
 </body>
 </html>
